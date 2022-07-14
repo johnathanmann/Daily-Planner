@@ -106,9 +106,20 @@ body {
 
 .btn{
  display: flex;
- 
 }
 
 i{
   padding: 10px;
+}
+
+/* Average phone viewport adjustments */
+@media screen and (max-width: 525px) {
+  .col-md-2{
+    margin:0px;
+    height: 40px;
+  }
+
+  .textInput{
+    font-size: 15px;
+  }
 }
