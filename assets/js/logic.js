@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("text5PM").onload = getValue5PM();
 });
 
+// Clear local storage and refresh page on click
 $('#clear').click(function () {
     window.localStorage.clear();
     window.location.reload();
