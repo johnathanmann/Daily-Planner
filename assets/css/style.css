@@ -1,5 +1,5 @@
 :root{
-  --light: #d1d1d1;
+  --light: #c5c5c5;
   --green: #60b477;
   --blue: #558a98;
 }
@@ -48,8 +48,8 @@ body {
 }
 
 .past_btn{
-  background-color: var(--blue);
-  color: #FFF;
+  background-color: #FFF;
+  color: var(--light);
   border: none;
 }
 
