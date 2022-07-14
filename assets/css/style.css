@@ -30,8 +30,12 @@ body {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 60px;
   border-top: 1px solid white;
+}
+
+#clear{
+  margin-bottom: 32px;
 }
 
 .past {
@@ -91,21 +95,12 @@ body {
   border: none;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
 .textInput{
   border: none;
   font-weight: bold;
   font-size: 20px;
   background-color: inherit;
   color: #fff;
-}
-
-.btn{
- display: flex;
 }
 
 i{

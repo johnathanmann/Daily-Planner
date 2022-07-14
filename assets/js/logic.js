@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("text5PM").onload = getValue5PM();
 });
 
+$('#clear').click(function () {
+    window.localStorage.clear();
+    window.location.reload();
+    });
+
 // Set 8am status
 // If 8am is in the past
 if(currentTime > 8){
