@@ -33,7 +33,7 @@ body {
 .row {
   white-space: pre-wrap;
   height: 60px;
-  border-top: 1px solid white;
+  margin: 3px 0px;
 }
 
 /* Margin for clear button */
@@ -126,5 +126,13 @@ i{
 
   .textInput{
     font-size: 15px;
+  }
+
+  .past_btn,.future_btn,.present_btn{
+    padding: 0px;
+  }
+
+  .row{
+    margin: 3px 5px;
   }
 }
