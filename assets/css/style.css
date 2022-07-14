@@ -1,3 +1,4 @@
+/* Colors used repeatedly across page */
 :root{
   --light: #c5c5c5;
   --green: #60b477;
@@ -11,6 +12,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Header at top that displays website purpose and current time */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -34,10 +36,10 @@ body {
   border-top: 1px solid white;
 }
 
+/* Margin for clear button */
 #clear{
   margin-bottom: 32px;
 }
-
 
 /* Adjust colors if hour is in the past */
 .past {

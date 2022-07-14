@@ -270,7 +270,7 @@ if(currentTime === 14){
     $('#time2PM').addClass('present_hour');
     $('#btn2PM').addClass('present_btn');
 }
-// If 1pm is in the future
+// If 2pm is in the future
 if(currentTime < 14){
     $('#row2PM').addClass('future');
     $('#time2PM').addClass('future_hour');
@@ -365,7 +365,7 @@ var getValue4PM = function(){
     document.getElementById("text4PM").value = storedText; 
     }
 } 
-// Save 1pm user input
+// Save 4pm user input
 $('#btn4PM').click(function () {
     var text = document.getElementById("text4PM").value;
     localStorage.setItem("text4PM",text);
@@ -403,7 +403,7 @@ var getValue5PM = function(){
     document.getElementById("text5PM").value = storedText; 
     }
 } 
-// Save 1pm user input
+// Save 5pm user input
 $('#btn5PM').click(function () {
     var text = document.getElementById("text5PM").value;
     localStorage.setItem("text5PM",text);
