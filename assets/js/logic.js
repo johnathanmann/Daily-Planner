@@ -8,7 +8,7 @@ setInterval(update, 1000);
 // Find current hour
 var currentTime = moment().hour();
 
-
+// Displays saved data on load
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("text8AM").onload = getValue8AM();
     document.getElementById("text9AM").onload = getValue9AM();
@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("text11AM").onload = getValue11AM();
     document.getElementById("text12PM").onload = getValue12PM();
     document.getElementById("text1PM").onload = getValue1PM();
+    document.getElementById("text2PM").onload = getValue2PM();
+    document.getElementById("text3PM").onload = getValue3PM();
+    document.getElementById("text4PM").onload = getValue4PM();
+    document.getElementById("text5PM").onload = getValue5PM();
 });
 
 // Set 8am status
@@ -245,4 +249,156 @@ var getValue1PM = function(){
 $('#btn1PM').click(function () {
     var text = document.getElementById("text1PM").value;
     localStorage.setItem("text1PM",text);
+    });
+
+// Set 2pm status
+// If 2pm is in the past
+if(currentTime > 14){
+    $('#row2PM').addClass('past');
+    $('#time2PM').addClass('past_hour');
+    $('#btn2PM').addClass('past_btn');
+}
+// If 2pm is the current time
+if(currentTime === 14){
+    $('#row2PM').addClass('present');
+    $('#time2PM').addClass('present_hour');
+    $('#btn2PM').addClass('present_btn');
+}
+// If 1pm is in the future
+if(currentTime < 14){
+    $('#row2PM').addClass('future');
+    $('#time2PM').addClass('future_hour');
+    $('#btn2PM').addClass('future_btn');
+}
+
+// Allows information to be loaded on reload
+var store2PM= function(){
+    var text = document.getElementById("text2PM").value;
+    localStorage.setItem("text2PM",text);
+}
+
+var getValue2PM = function(){
+    var storedText = localStorage.getItem("text2PM");
+    if(storedText != null){
+    document.getElementById("text2PM").value = storedText; 
+    }
+} 
+// Save 2pm user input
+$('#btn2PM').click(function () {
+    var text = document.getElementById("text2PM").value;
+    localStorage.setItem("text2PM",text);
+    });
+
+// Set 3pm status
+// If 3pm is in the past
+if(currentTime > 15){
+    $('#row3PM').addClass('past');
+    $('#time3PM').addClass('past_hour');
+    $('#btn3PM').addClass('past_btn');
+}
+// If 3pm is the current time
+if(currentTime === 15){
+    $('#row3PM').addClass('present');
+    $('#time3PM').addClass('present_hour');
+    $('#btn3PM').addClass('present_btn');
+}
+// If 3pm is in the future
+if(currentTime < 15){
+    $('#row3PM').addClass('future');
+    $('#time3PM').addClass('future_hour');
+    $('#btn3PM').addClass('future_btn');
+}
+
+// Allows information to be loaded on reload
+var store3PM= function(){
+    var text = document.getElementById("text3PM").value;
+    localStorage.setItem("text3PM",text);
+}
+
+var getValue3PM = function(){
+    var storedText = localStorage.getItem("text3PM");
+    if(storedText != null){
+    document.getElementById("text3PM").value = storedText; 
+    }
+} 
+// Save 3pm user input
+$('#btn3PM').click(function () {
+    var text = document.getElementById("text3PM").value;
+    localStorage.setItem("text3PM",text);
+    });
+
+// Set 4pm status
+// If 4pm is in the past
+if(currentTime > 16){
+    $('#row4PM').addClass('past');
+    $('#time4PM').addClass('past_hour');
+    $('#btn4PM').addClass('past_btn');
+}
+// If 4pm is the current time
+if(currentTime === 16){
+    $('#row4PM').addClass('present');
+    $('#time4PM').addClass('present_hour');
+    $('#btn4PM').addClass('present_btn');
+}
+// If 4pm is in the future
+if(currentTime < 16){
+    $('#row4PM').addClass('future');
+    $('#time4PM').addClass('future_hour');
+    $('#btn4PM').addClass('future_btn');
+}
+
+// Allows information to be loaded on reload
+var store4PM= function(){
+    var text = document.getElementById("text4PM").value;
+    localStorage.setItem("text4PM",text);
+}
+
+var getValue4PM = function(){
+    var storedText = localStorage.getItem("text4PM");
+    if(storedText != null){
+    document.getElementById("text4PM").value = storedText; 
+    }
+} 
+// Save 1pm user input
+$('#btn4PM').click(function () {
+    var text = document.getElementById("text4PM").value;
+    localStorage.setItem("text4PM",text);
+    });
+
+// Set 5pm status
+// If 5pm is in the past
+if(currentTime > 17){
+    $('#row5PM').addClass('past');
+    $('#time5PM').addClass('past_hour');
+    $('#btn5PM').addClass('past_btn');
+}
+// If 5pm is the current time
+if(currentTime === 17){
+    $('#row5PM').addClass('present');
+    $('#time5PM').addClass('present_hour');
+    $('#btn5PM').addClass('present_btn');
+}
+// If 5pm is in the future
+if(currentTime < 17){
+    $('#row5PM').addClass('future');
+    $('#time5PM').addClass('future_hour');
+    $('#btn5PM').addClass('future_btn');
+}
+
+// Allows information to be loaded on reload
+var store5PM= function(){
+    var text = document.getElementById("text5PM").value;
+    localStorage.setItem("text5PM",text);
+}
+
+var getValue5PM = function(){
+    var storedText = localStorage.getItem("text5PM");
+    if(storedText != null){
+    document.getElementById("text5PM").value = storedText; 
+    }
+} 
+// Save 1pm user input
+$('#btn5PM').click(function () {
+    var text = document.getElementById("text5PM").value;
+    localStorage.setItem("text5PM",text);
     });
